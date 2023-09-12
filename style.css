@@ -1,0 +1,25 @@
+input[type=range] {
+  -webkit-appearance: none;
+  height: 2em;
+  width:300px;
+  background-image: linear-gradient(to right, red, yellow, lime, aqua, blue, fuchsia, red);
+  display: block;
+}
+
+.slider {
+  width: calc(min-content + 1em);
+}
+
+button {
+  width: 2.5em;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+#rem-col {
+  display: none;
+}
+
+p {
+  display: inline-block;
+}

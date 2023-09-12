@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <title>Hue Shifter</title>
+</head>
+<body>
+  <h2>Batch Color Hue Shifter</h2>
+  <input onChange="shiftColorSelectors(this.value)" type="range" min="0" max="360" value="0" id='hueSlider'>
+  <p>Master Color:</p>
+  <div>
+    <input onChange="colorChanged(this)" type="color" value='#ff0000' id="master">
+    <span class='rbg'></span>
+  </div>
+  <p>Additional Colors:</p>
+  <button id='add-col' onClick="addPicker()">+</button>
+  <button id='rem-col' onClick="remPicker()">-</button>
+</body>
+</html>
